@@ -1,0 +1,24 @@
+# Konfiguration des Spieler-Wikis
+
+site:
+  title: "Die Chroniken von Willip"
+  subtitle: "Eine Chronik der bekannten Welt"
+  campaign_session: 5
+
+# Hier werden Informationsblöcke freigeschaltet.
+# Sobald eine ID hier eingetragen wird, wird der entsprechende
+# :::unlock id=... Block im Spielerwiki sichtbar.
+unlocks:
+  - dr-kreutz-sanatorium
+
+# Welche Obsidian-Ordner grundsätzlich exportiert werden sollen.
+# SL-Ordner sollten NICHT hier stehen.
+include_folders:
+  - 01_Spielerwissen
+  - 03_Gemeinsame_Datenbank
+
+# Optionale Ordner, die immer ignoriert werden.
+exclude_folders:
+  - 02_Spielleiterwissen
+  - .obsidian
+  - templates
